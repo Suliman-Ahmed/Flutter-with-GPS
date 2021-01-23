@@ -1,13 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.genx.flutter_gps">
+    
+    <!-- Add Permissions -->
    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
    <application
         android:label="flutter_gps"
         android:icon="@mipmap/ic_launcher">
 
+        <!-- Get Your API Key from https://cloud.google.com/maps-platform -->
        <meta-data android:name="com.google.android.geo.API_KEY"
-           android:value="Your Google Maps API Key"/>
+           android:value="Put Your API Key"/>
 
         <activity
             android:name=".MainActivity"
